@@ -1,0 +1,24 @@
+.orga-thumb-iframe-size {
+	width: 200px;
+	height: 150px;
+}
+
+.orga-thumb-iframe-wrapper {
+	display: inline-block;
+	position: relative;
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+.orga-thumb-iframe-content {
+	position: absolute;
+	width: 800px;
+	height: 600px;
+}
+
+.orga-thumb-iframe-shield {
+	position: absolute;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}

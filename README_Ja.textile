@@ -1,0 +1,37 @@
+h1. Closureのためのサムネールモジュール
+
+h2. 概要
+
+このモジュール群はWebページの簡単なサムネール作成を提供します。
+現在は "SimpleAPI":http://img.simpleapi.net/ 、 "Heartrails"http://capture.heartrails.com/ 、 "Mozshot":http://mozshot.nemui.org/ 、 "ThumbShot":http://www.thumbshots.com/ による WebAPI を利用したものと、iframe を利用したものの2種類を用意しています。
+WebAPI を用いた方法は一般に動作が軽いですが、サービスの運用状況や利用制限があります。
+iframe を用いた方法は動作が重いですが、サービスの運用状況如何に関わらず動作します(ただし、 "X-Frame-Options":https://developer.mozilla.org/ja/The_X-Frame-Options_response_header が設定されていると表示できない場合があります）。
+
+
+h2. サンプル
+
+<pre>
+var TEST = 'https://developers.google.com/closure/';
+var TARGET = goog.dom.getElement('output'); // You put div#output tag before this code.
+
+var iThumb = new orga.thumb.IFrameThumbnailGetter();
+TARGET.appendChild(iThumb.getElement(TEST));
+
+var sThumb = new orga.thumb.webapi.SimpleApiThumbnailGetter();
+TARGET.appendChild(sThumb.getElement(TEST));
+
+var tsThumb = new orga.thumb.webapi.ThumbShotThumbnailGetter();
+TARGET.appendChild(tsThumb.getElement(TEST));
+
+var hrThumb = new orga.thumb.webapi.HeartrailsThumbnailGetter();
+TARGET.appendChild(hrThumb.getElement(TEST));
+
+var mThumb = new orga.thumb.webapi.MozshotThumbnailGetter();
+TARGET.appendChild(mThumb.getElement(TEST));
+</pre>
+
+
+h2. API リファレンス
+
+"Wiki":https://github.com/OrgaChem/Thumbnail-for-Closure/wiki/API-%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9(API-Reference-for-Japanese) を参照してください。
+英語版は "こちら":https://github.com/OrgaChem/Thumbnail-for-Closure/wiki/API-Reference 。

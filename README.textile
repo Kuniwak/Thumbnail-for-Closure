@@ -1,0 +1,40 @@
+h1. Web page thumbnail modules for Closure
+
+"Here":https://github.com/OrgaChem/Thumbnail-for-Closure/blob/master/README_Ja.textile is a README for Japanese.
+日本語のREADMEは "こちら":https://github.com/OrgaChem/Thumbnail-for-Closure/blob/master/README_Ja.textile
+
+
+h2. Abstract
+
+These modules provides easy creation web page thumbnails.
+Now, you can creating a thumbnail by some WebAPIs, such as: "SimpleAPI":http://img.simpleapi.net/ , "Heartrails"http://capture.heartrails.com/ , "Mozshot":http://mozshot.nemui.org/ , "ThumbShot":http://www.thumbshots.com/ .
+using WebAPI is very light, but it might be unavailable if the service is stopped.
+iframe thumbnail avoid relying on WebAPI services, but it is slowly.
+However, iframe thumbnail does not work, if "X-Frame-Options":https://developer.mozilla.org/ja/The_X-Frame-Options_response_header is enable.
+
+
+h2. Sample
+<pre>
+var TEST = 'https://developers.google.com/closure/';
+var TARGET = goog.dom.getElement('output'); // You put div#output tag before this code.
+
+var iThumb = new orga.thumb.IFrameThumbnailGetter();
+TARGET.appendChild(iThumb.getElement(TEST));
+
+var sThumb = new orga.thumb.webapi.SimpleApiThumbnailGetter();
+TARGET.appendChild(sThumb.getElement(TEST));
+
+var tsThumb = new orga.thumb.webapi.ThumbShotThumbnailGetter();
+TARGET.appendChild(tsThumb.getElement(TEST));
+
+var hrThumb = new orga.thumb.webapi.HeartrailsThumbnailGetter();
+TARGET.appendChild(hrThumb.getElement(TEST));
+
+var mThumb = new orga.thumb.webapi.MozshotThumbnailGetter();
+TARGET.appendChild(mThumb.getElement(TEST));
+</pre>
+
+
+h2. API Reference
+
+Show the "Wiki":https://github.com/OrgaChem/Thumbnail-for-Closure/wiki/API-Reference .
