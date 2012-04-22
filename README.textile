@@ -7,7 +7,7 @@ h1. Web page thumbnail modules for Closure
 h2. Abstract
 
 These modules provides easy creation web page thumbnails.
-Now, you can creating a thumbnail by some WebAPIs, such as: "SimpleAPI":http://img.simpleapi.net/ , "Heartrails"http://capture.heartrails.com/ , "Mozshot":http://mozshot.nemui.org/ , "ThumbShot":http://www.thumbshots.com/ .
+Now, you can creating a thumbnail by some WebAPIs, such as: "SimpleAPI":http://img.simpleapi.net/ , "Heartrails":http://capture.heartrails.com/ , "Mozshot":http://mozshot.nemui.org/ , "ThumbShot":http://www.thumbshots.com/ .
 using WebAPI is very light, but it might be unavailable if the service is stopped.
 iframe thumbnail avoid relying on WebAPI services, but it is slowly.
 However, iframe thumbnail does not work, if "X-Frame-Options":https://developer.mozilla.org/ja/The_X-Frame-Options_response_header is enable.

@@ -3,7 +3,7 @@ h1. Closureのためのサムネールモジュール
 h2. 概要
 
 このモジュール群はWebページの簡単なサムネール作成を提供します。
-現在は "SimpleAPI":http://img.simpleapi.net/ 、 "Heartrails"http://capture.heartrails.com/ 、 "Mozshot":http://mozshot.nemui.org/ 、 "ThumbShot":http://www.thumbshots.com/ による WebAPI を利用したものと、iframe を利用したものの2種類を用意しています。
+現在は "SimpleAPI":http://img.simpleapi.net/ 、 "Heartrails":http://capture.heartrails.com/ 、 "Mozshot":http://mozshot.nemui.org/ 、 "ThumbShot":http://www.thumbshots.com/ による WebAPI を利用したものと、iframe を利用したものの2種類を用意しています。
 WebAPI を用いた方法は一般に動作が軽いですが、サービスの運用状況や利用制限があります。
 iframe を用いた方法は動作が重いですが、サービスの運用状況如何に関わらず動作します(ただし、 "X-Frame-Options":https://developer.mozilla.org/ja/The_X-Frame-Options_response_header が設定されていると表示できない場合があります）。
 
