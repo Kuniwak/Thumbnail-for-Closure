@@ -16,7 +16,7 @@ goog.require('orga.thumb.ImageElementThumbnailGetter');
 /**
  * {@link http://capture.heartrails.com/}
  * @constructor
- * @extends {goog.Disposable}
+ * @extends {orga.thumb.ImageElementThumbnailGetter}
  */
 orga.thumb.webapi.HeartrailsThumbnailGetter = function() {
   goog.base(this);
