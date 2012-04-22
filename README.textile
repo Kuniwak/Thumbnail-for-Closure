@@ -14,6 +14,7 @@ However, iframe thumbnail does not work, if "X-Frame-Options":https://developer.
 
 
 h2. Sample
+
 <pre>
 var TEST = 'https://developers.google.com/closure/';
 var TARGET = goog.dom.getElement('output'); // You put div#output tag before this code.
