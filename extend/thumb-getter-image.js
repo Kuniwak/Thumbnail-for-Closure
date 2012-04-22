@@ -16,7 +16,7 @@ goog.require('orga.thumb');
 
 /**
  * @constructor
- * @extends {goog.Disposable}
+ * @extends {orga.thumb.ThumbnailGetter}
  */
 orga.thumb.ImageElementThumbnailGetter = function() {
   goog.base(this);

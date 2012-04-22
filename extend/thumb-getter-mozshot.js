@@ -16,7 +16,7 @@ goog.require('orga.thumb.ImageElementThumbnailGetter');
 /**
  * {@link http://img.simpleapi.net/}
  * @constructor
- * @extends {goog.Disposable}
+ * @extends {orga.thumb.ImageElementThumbnailGetter}
  */
 orga.thumb.webapi.MozshotThumbnailGetter = function() {
   goog.base(this);
@@ -40,7 +40,7 @@ orga.thumb.webapi.MozshotThumbnailGetter.SizePreset = {
   /** @const */
   MEDIUM: 'shot/small',
   /** @const */
-  LARGE: 'shot/large',
+  LARGE: 'shot/large'
 };
 
 
@@ -50,7 +50,7 @@ orga.thumb.webapi.MozshotThumbnailGetter.SIZE =
 
 
 /** @const */
-orga.thumb.webapi.MozshotThumbnailGetter.prototype.SIZE = 
+orga.thumb.webapi.MozshotThumbnailGetter.prototype.SIZE =
     orga.thumb.webapi.MozshotThumbnailGetter.SIZE;
 
 
@@ -69,4 +69,4 @@ orga.thumb.webapi.MozshotThumbnailGetter.prototype.getImageSrc =
     function(uri) {
   var newUri = this.PREFIX_URI + this.SIZE;
   return newUri + '?' + uri;
-}
+};

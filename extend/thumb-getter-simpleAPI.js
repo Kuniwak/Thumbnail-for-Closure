@@ -16,7 +16,7 @@ goog.require('orga.thumb.webapi.PrefixUriThumbnailGetter');
 /**
  * {@link http://img.simpleapi.net/}
  * @constructor
- * @extends {goog.Disposable}
+ * @extends {orga.thumb.webapi.PrefixUriThumbnailGetter}
  */
 orga.thumb.webapi.SimpleApiThumbnailGetter = function() {
   goog.base(this);

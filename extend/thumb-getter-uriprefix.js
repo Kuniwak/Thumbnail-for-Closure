@@ -16,7 +16,7 @@ goog.require('orga.thumb.ImageElementThumbnailGetter');
 /**
  * {@link http://www.thumbshots.com/}
  * @constructor
- * @extends {goog.Disposable}
+ * @extends {orga.thumb.ImageElementThumbnailGetter}
  */
 orga.thumb.webapi.PrefixUriThumbnailGetter = function() {
   goog.base(this);
